@@ -1,0 +1,111 @@
+:root {
+    --white: #fff;
+    --orange: #f60;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: trade-gothic;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: 0;
+    padding: 0 40px 0 0;
+    height: 147px;
+    background: rgba(0, 0, 0, 0);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 280px;
+}
+
+#navigation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#navigation a {
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+#icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icons a {
+    color: var(--orange);
+}
+
+#icons img {
+    height: 147px;
+    margin-left: 20px;
+}
+
+#explore {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--white);
+}
+
+#explore button {
+    background-color: var(--orange);
+    border-style: none;
+    color: var(--white);
+}
+
+#models {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#newsletter div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#newsletter button {
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    background-color: var(--white);
+    padding: 25px 40px;
+}
+
+#newsletter button:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+#newsletter p {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #bdbdbd;
+    line-height: 150%;
+}
