@@ -78,8 +78,32 @@ header {
 }
 
 #models {
+    margin: 80px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#models div {
+    width: 466px;
+    height: 434px;
+}
+
+#models img {
+    width: 100%;
+    height: auto;
+}
+
+#models h6 {
+    margin: 20px 0 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+#models h4 {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 #news {
@@ -108,6 +132,67 @@ header {
     line-height: 190%;
     font-size: 0.95rem;
     padding-right: 10px;
+}
+
+#video {
+    margin: 60px 40px;
+    display: grid;
+    grid-template-columns: 363px 363px 720px;
+    grid-template-rows: repeat(2, 270px);
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#video div {
+    grid-row: span 2;
+    grid-column: 3;
+    color: var(--white);
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#video div h2 {
+    margin-bottom: -5px;
+    font-size: 2rem;
+}
+
+#video div p {
+    color: #bdbdbd;
+    margin: 5px 0 50px;
+}
+
+#video div hr {
+    width: 10%;
+}
+
+#video div button {
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    padding: 25px 40px;
+    font-size: 0.7rem;
 }
 
 #newsletter {
