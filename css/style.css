@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -79,8 +83,35 @@ header {
 }
 
 #news {
+    margin: 20px 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#news img {
+    width: 433px;
+    height: 433px;
+}
+
+#news h4 {
+    font-size: 0.9rem;
+}
+
+#news a {
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+#news p {
+    line-height: 190%;
+    font-size: 0.95rem;
+    padding-right: 10px;
+}
+
+#newsletter {
+    margin: 15px 0;
 }
 
 #newsletter div {
@@ -101,6 +132,11 @@ header {
     background-color: var(--orange);
 }
 
+#newsletter hr {
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: 80px;
+}
+
 #newsletter p {
     width: 50%;
     margin: 40px auto;
@@ -108,4 +144,75 @@ header {
     font-size: 0.8rem;
     color: #bdbdbd;
     line-height: 150%;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 30px;
+    margin: 0;
+    padding: 30px;
+}
+
+#links {
+    display: grid;
+    grid-template-columns: repeat(5, 265px);
+    gap: 20px;
+}
+
+#links a {
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.link-column {
+    margin: 40px 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.link-column ul {
+    margin: 0;
+    padding: 0;
+}
+
+.link-column li {
+    padding: 5px 0;
+}
+
+.link-column:nth-child(5) ul {
+    display: flex;
+    justify-content: space-between;
+} 
+
+#footer-icons a {
+    font-size: 1.2rem;
+}
+
+#footer icons a:hover {
+    color: var(--white);
+}
+
+.ending {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ending p {
+    font-size: 0.8rem;
+    color: #bdbdbd;
+    margin: 40px 0;
+}
+
+#back-to-top {
+    background-color: var(--black);
+    border-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+#back-to-top a {
+    color: var(--orange);
+    font-weight: 600;
 }
