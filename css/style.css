@@ -30,10 +30,13 @@ header {
     margin: 0;
     padding: 0 40px 0 0;
     height: 147px;
+    width: 100%;
     background: rgba(0, 0, 0, 0);
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 280px;
+    position: absolute;
+    top: 0;
 }
 
 #navigation {
@@ -67,14 +70,38 @@ header {
 #explore {
     margin: 0;
     padding: 0;
-    text-align: center;
     color: var(--white);
+    background-image: url(../images/motocross.jpg);
+    background-color: var(--orange);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#explore h5 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#explore h1 {
+    font-size: 3rem;
+    margin: 20px 0;
 }
 
 #explore button {
     background-color: var(--orange);
     border-style: none;
     color: var(--white);
+    padding: 30px 35px;
+}
+
+#explore button:hover {
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #models {
