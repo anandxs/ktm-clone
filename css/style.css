@@ -141,6 +141,16 @@ header {
     grid-template-rows: repeat(2, 270px);
 }
 
+#video a {
+    overflow: hidden;
+}
+
+video {
+    position: relative;
+    top: -235px;
+    right: 109px;
+}
+
 .one {
     grid-column: 1;
     grid-row: 1;
@@ -185,6 +195,7 @@ header {
 
 #video div hr {
     width: 10%;
+    border-bottom: 1px solid #bdbdbd;
 }
 
 #video div button {
@@ -193,6 +204,11 @@ header {
     border: 1px solid var(--white);
     padding: 25px 40px;
     font-size: 0.7rem;
+}
+
+#video div button:hover {
+    color: var(--orange);
+    border: 1px solid var(--orange);
 }
 
 #newsletter {
