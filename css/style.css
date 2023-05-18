@@ -19,6 +19,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 ul {
     list-style: none;
 }
@@ -100,9 +104,21 @@ header {
 }
 
 #explore button:hover {
-    border: 1px solid var(--orange);
-    color: var(--orange);
-    background-color: rgba(0, 0, 0, 0);
+    animation-name: explorebtnhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes explorebtnhover {
+    0% {
+        background-color: var(--orange);
+    }
+    
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid var(--orange);
+        color: var(--orange);
+    }
 }
 
 #models {
@@ -251,12 +267,17 @@ video {
 
 #newsletter button {
     border: 1px solid var(--orange);
+    padding: 25px 40px;
     color: var(--orange);
     background-color: var(--white);
-    padding: 25px 40px;
+    transition: 0.5s;
 }
 
-#newsletter button:hover {
+#right-arrow {
+    display: none;
+}
+
+#newsletter button:hover { 
     color: var(--white);
     background-color: var(--orange);
 }
@@ -312,7 +333,7 @@ footer {
 .link-column:nth-child(5) ul {
     display: flex;
     justify-content: space-between;
-} 
+}
 
 #footer-icons a {
     font-size: 1.2rem;
