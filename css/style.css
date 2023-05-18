@@ -264,7 +264,8 @@ video {
 }
 
 #right-arrow {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.4s, background-color 0.4s, color 0.4s;
 }
 
 #sign-up-btn {
@@ -272,11 +273,16 @@ video {
     padding: 25px 40px;
     color: var(--orange);
     background-color: var(--white);
-    /* transition: 0.5s; */
+    transition: 0.4s;
+    width: 200px;
 }
 
+#sign-up-btn:hover,
 #sign-up-btn:hover #right-arrow { 
     display: inline;
+    opacity: 1;
+    color: var(--white);
+    background-color: var(--orange);
 }
 
 #newsletter hr {
