@@ -98,15 +98,15 @@ header {
 
 #explore button {
     background-color: var(--orange);
-    border-style: none;
     color: var(--white);
+    border-style: none;
     padding: 30px 35px;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 #explore button:hover {
-    animation-name: explorebtnhover;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--orange);
 }
 
 #models {
