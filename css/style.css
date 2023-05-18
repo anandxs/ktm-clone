@@ -167,9 +167,18 @@ header {
 }
 
 #news a {
-    color: var(--black);
     font-size: 1.4rem;
     font-weight: 900;
+}
+
+#news div a {
+    color: var(--black);
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+#news div a:hover {
+    color: var(--orange);
 }
 
 #news p {
