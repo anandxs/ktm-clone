@@ -263,21 +263,20 @@ video {
     gap: 30px;
 }
 
-#newsletter button {
-    border: 1px solid var(--orange);
-    padding: 25px 40px;
-    color: var(--orange);
-    background-color: var(--white);
-    transition: 0.5s;
-}
-
 #right-arrow {
     display: none;
 }
 
-#newsletter button:hover { 
-    color: var(--white);
-    background-color: var(--orange);
+#sign-up-btn {
+    border: 1px solid var(--orange);
+    padding: 25px 40px;
+    color: var(--orange);
+    background-color: var(--white);
+    /* transition: 0.5s; */
+}
+
+#sign-up-btn:hover #right-arrow { 
+    display: inline;
 }
 
 #newsletter hr {
