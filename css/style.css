@@ -109,18 +109,6 @@ header {
     animation-fill-mode: forwards;
 }
 
-@keyframes explorebtnhover {
-    0% {
-        background-color: var(--orange);
-    }
-    
-    100% {
-        background-color: rgba(0, 0, 0, 0);
-        border: 1px solid var(--orange);
-        color: var(--orange);
-    }
-}
-
 #models {
     margin: 80px 40px;
     display: grid;
@@ -257,6 +245,7 @@ video {
     border: 1px solid var(--white);
     padding: 25px 40px;
     font-size: 0.7rem;
+    transition: color 0.4s, border 0.4s;
 }
 
 #video div button:hover {
