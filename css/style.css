@@ -2,6 +2,8 @@
     --white: #fff;
     --orange: #f60;
     --black: #000;
+    --grey: #bdbdbd;
+    --transparent: #00000000;
 }
 
 * {
@@ -36,7 +38,6 @@ header {
     padding: 0 40px 0 0;
     height: 147px;
     width: 100%;
-    background: rgba(0, 0, 0, 0);
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 280px;
@@ -105,7 +106,7 @@ header {
 }
 
 #explore button:hover {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--transparent);
     color: var(--orange);
 }
 
@@ -230,13 +231,13 @@ video {
 }
 
 #video div p {
-    color: #bdbdbd;
+    color: var(--grey);
     margin: 5px 0 50px;
 }
 
 #video div hr {
     width: 10%;
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid var(--grey);
 }
 
 #video div button {
@@ -286,7 +287,7 @@ video {
 }
 
 #newsletter hr {
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid var(--grey);
     margin-top: 80px;
 }
 
@@ -295,7 +296,7 @@ video {
     margin: 40px auto;
     text-align: center;
     font-size: 0.8rem;
-    color: #bdbdbd;
+    color: var(--grey);
     line-height: 150%;
 }
 
@@ -357,7 +358,7 @@ footer {
 
 .ending p {
     font-size: 0.8rem;
-    color: #bdbdbd;
+    color: var(--grey);
     margin: 40px 0;
 }
 
